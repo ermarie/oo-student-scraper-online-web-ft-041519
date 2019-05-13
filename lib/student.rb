@@ -21,8 +21,8 @@ class Student
     student[:bio] = attributes_hash[:bio]
     student[:linkedin] = attributes_hash[:linkedin]
     student[:blog] = attributes_hash[:blog]
-    student[:linkedin] = attributes_hash[:linkedin]
-    student[:linkedin] = attributes_hash[:linkedin]
+    student[:github] = attributes_hash[:github]
+    student[:profile_url] = attributes_hash[:profile_url]
     student[:linkedin] = attributes_hash[:linkedin]
   end
 

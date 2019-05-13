@@ -13,8 +13,8 @@ class Scraper
         :location => student.css("p.student-location").text
       }
       student_arr << new_student
+      new_student
     end
-    binding.pry
     student_arr
   end
 

@@ -20,6 +20,8 @@ class Scraper
 
   def self.scrape_profile_page(profile_url)
     doc = Nokogiri::HTML(File.read(profile_url))
+    profile_name = doc.css("div.profile-name").text
+    student = {:profile_name => profile_name}
   end
 
 end

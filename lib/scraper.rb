@@ -25,13 +25,13 @@ class Scraper
     links.css("a").each do |link|
       binding.pry
       if link.include?("twitter")
-        student[:twitter] = link.css("a").attribute('href').value
+        student[:twitter] = link.attribute('href').value
       elsif link.include?("github")
-        student[:github] = link.css("a").attribute('href').value
+        student[:github] = link.attribute('href').value
       elsif link.include? ("linkedin")
-        student[:linkedin] = link.css("a").attribute('href').value
+        student[:linkedin] = link.attribute('href').value
       else
-        student[:blog] = link.css("a").attribute('href').value
+        student[:blog] = link.attribute('href').value
       end
     end
     student

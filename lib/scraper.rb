@@ -22,7 +22,8 @@ class Scraper
     student = {}
     doc = Nokogiri::HTML(File.read(profile_url))
     binding.pry
-    doc.css("div.social-icon-container.a").each do |link|
+    links = doc.css("div.social-icon-container.a")
+    links.css("a").each do |link|
       if link.include?("twitter")
         student[:twitter] = link.css("a").attribute('href').value
       elsif link.include?("github")

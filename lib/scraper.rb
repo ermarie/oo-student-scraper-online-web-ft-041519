@@ -27,7 +27,7 @@ class Scraper
       elsif link.include?("github")
         github = link.css("a").attribute('href').value
       elsif link.include? ("linkedin")
-        linkedin = 
+        linkedin =
     profile_name = doc.css("div.profile-name").text
     student = {
       :bio => doc.css("div.description-holder.p").text

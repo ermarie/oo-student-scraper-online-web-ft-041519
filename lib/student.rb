@@ -23,7 +23,7 @@ class Student
     student[:blog] = attributes_hash[:blog]
     student[:github] = attributes_hash[:github]
     student[:profile_url] = attributes_hash[:profile_url]
-    student[:linkedin] = attributes_hash[:linkedin]
+    student[:profile_quote] = attributes_hash[:profile_quote]
   end
 
   def self.all

@@ -18,6 +18,7 @@ class Student
 
   def add_student_attributes(attributes_hash)
     student[:twitter] = attributes_hash[:twitter]
+    student[:bio] = attributes_hash[:bio]
   end
 
   def self.all

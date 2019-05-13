@@ -35,6 +35,8 @@ class Scraper
         student[:blog] = link
       end
     end
+    bio = doc.css("div.description-holder")
+    student[:bio] = bio.css("p")
     student
   end
 

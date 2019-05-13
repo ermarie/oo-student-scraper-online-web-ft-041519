@@ -26,13 +26,13 @@ class Scraper
     links.css("a").each { |link| link_arr << link.attribute('href').value }
     link_arr.each do |link|
       if link.include?("twitter")
-        student[:twitter] = link.attribute('href').value
+        student[:twitter] = link
       elsif link.include?("github")
-        student[:github] = link.attribute('href').value
+        student[:github] = link
       elsif link.include? ("linkedin")
-        student[:linkedin] = link.attribute('href').value
+        student[:linkedin] = link
       else
-        student[:blog] = link.attribute('href').value
+        student[:blog] = link
       end
     end
     student

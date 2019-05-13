@@ -25,6 +25,7 @@ class Student
     student[:github] = attributes_hash[:github]
     student[:profile_url] = attributes_hash[:profile_url]
     student[:profile_quote] = attributes_hash[:profile_quote]
+    student
   end
 
   def self.all

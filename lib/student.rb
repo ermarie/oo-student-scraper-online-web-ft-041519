@@ -17,6 +17,7 @@ class Student
   end
 
   def add_student_attributes(attributes_hash)
+    binding.pry
     self.store(:twitter) = attributes_hash[:twitter]
     self[:bio] = attributes_hash[:bio]
     student[:linkedin] = attributes_hash[:linkedin]

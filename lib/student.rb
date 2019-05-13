@@ -20,6 +20,10 @@ class Student
     student[:twitter] = attributes_hash[:twitter]
     student[:bio] = attributes_hash[:bio]
     student[:linkedin] = attributes_hash[:linkedin]
+    student[:blog] = attributes_hash[:blog]
+    student[:linkedin] = attributes_hash[:linkedin]
+    student[:linkedin] = attributes_hash[:linkedin]
+    student[:linkedin] = attributes_hash[:linkedin]
   end
 
   def self.all

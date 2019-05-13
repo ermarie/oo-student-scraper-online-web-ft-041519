@@ -33,6 +33,7 @@ class Scraper
       else
         student[:blog] = link.attribute('href').value
       end
+    end
     student
   end
 
